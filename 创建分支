@@ -41,3 +41,7 @@ Deleted branch dev (was 5a4dc70).
 Administrator@PC-20170319NIQY MINGW64 /e/Git/learngit/gitskill (master)
 $ git branch
 * master
+
+创建分支后，在分支中修改文件，然后回到master中修改文件，两次修改内容不一样。
+当merge时，就会出现分支冲突的现象，提示conflict。使用git status可以告诉我们冲突的文件。
+再次进去文件中会发现git使用>>>>>>>> ========== <<<<<<<<标记不同分支的内容。手动修改文件，再提交。
