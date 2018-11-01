@@ -1,2 +1,43 @@
 创建分支dev git branch dev 
 转换到dev分支 git checkout dev
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+Administrator@PC-20170319NIQY MINGW64 /e/Git/learngit/gitskill (dev)
+$ git branch
+* dev
+  master
+
+Administrator@PC-20170319NIQY MINGW64 /e/Git/learngit/gitskill (dev)
+$ git add "创建分支"
+
+Administrator@PC-20170319NIQY MINGW64 /e/Git/learngit/gitskill (dev)
+$ git commit -m "branch test"
+[dev 5a4dc70] branch test
+ 1 file changed, 2 insertions(+)
+ create mode 100644 "\345\210\233\345\273\272\345\210\206\346\224\257"
+
+Administrator@PC-20170319NIQY MINGW64 /e/Git/learngit/gitskill (dev)
+$ cat 创建分支
+创建分支dev git branch dev
+转换到dev分支 git checkout dev
+Administrator@PC-20170319NIQY MINGW64 /e/Git/learngit/gitskill (dev)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Administrator@PC-20170319NIQY MINGW64 /e/Git/learngit/gitskill (master)
+$ git merge dev
+Updating b387821..5a4dc70
+Fast-forward
+ "\345\210\233\345\273\272\345\210\206\346\224\257" | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 "\345\210\233\345\273\272\345\210\206\346\224\257"
+
+Administrator@PC-20170319NIQY MINGW64 /e/Git/learngit/gitskill (master)
+$ git branch -d dev
+Deleted branch dev (was 5a4dc70).
+
+Administrator@PC-20170319NIQY MINGW64 /e/Git/learngit/gitskill (master)
+$ git branch
+* master
