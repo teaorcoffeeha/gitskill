@@ -35,9 +35,11 @@ Fast-forward
  create mode 100644 "\345\210\233\345\273\272\345\210\206\346\224\257"
 
 Administrator@PC-20170319NIQY MINGW64 /e/Git/learngit/gitskill (master)
-$ git branch -d dev
-Deleted branch dev (was 5a4dc70).
 
 Administrator@PC-20170319NIQY MINGW64 /e/Git/learngit/gitskill (master)
 $ git branch
 * master
+
+解决冲突 
+jdfkadk
+对方就爱看的的房间开
